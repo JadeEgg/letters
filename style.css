@@ -1,14 +1,15 @@
-/* Import Google Fonts */
+/* IMPORTS */
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Merriweather:wght@400;700&display=swap');
 
-/* SELECTORS */
+/* VARIABLES */
 :root {
   --background: #1c1c1c; /* soft black */
-  --heading: #D4AF37; /* white gold; dark */ 
+  --heading: #D4AF37; /* white gold; dark */
   --text: #d3d3d3; /* ghostly gray */
   --special: #B22222; /* firebrick red */
 }
 
+/* SELECTORS */
 body {
   background-color: var(--background);
   font-family: 'Lora', serif;
@@ -16,50 +17,51 @@ body {
   color: var(--text);
 }
 
-header {
+header { /* leverages flexbox to manage the header elements */
   font-family: 'Merriweather', serif;
   color: var(--heading);
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  padding: 40px 0 50px 0;
 }
 
-header img {
-  flex-shrink: 0;
+header img { 
+  position: absolute; /* supports the heading to be center-aligned relative to page width */
   max-width: 150px;
-  height: auto;
 }
 
-h1, h6 {
+h1, h6 { 
   font-size: 76px;
-  flex-grow: 1;
-  position: absolute;
+  width: 100%; /* allows the heading to be center-aligned relative to page width */
   text-align: center;
-width: 100%;
 }
 
-main {
-  max-width: 750px;
+main { /* constrained for readability. margin auto is required to center align. */
+  max-width: 650px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 h2 {
   color: var(--heading);
-  font-size: 53px;
+  font-size: 50px;
   text-align: center;
-  padding: 0 0 20px 0;
+  margin: 50px 0 20px 0;
+  padding: 0
 }
 
 footer {
   color: var(--background);
   text-align: right;
-  margin: 40px 20px 10px 0;
+  margin: 100px 20px 10px 0;
 }
 
 /* CLASSES */
 .crumb {
   font-size: 15px;
+  margin-top: 20px;
+  padding: 0;
 }
 
 .crumb a {
@@ -72,13 +74,14 @@ footer {
 }
 
 /* IDS */
-#index-list {
-  font-size: 22px;
-  list-style: none;
+#index-list { /* turns the body of index.html into a stacking list */
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  word-wrap: wrap;
 }
 
-#index-list li {
+#index-list p {
   margin: 20px 0;
 }
 
@@ -91,33 +94,28 @@ footer {
   color: var(--special);
 }
 
-/* OTHER */
+/* RESPONSIVE DESIGN */
 @media (max-width: 550px) {
-  
-  header {
+  header { /* makes the header image and h1 stack */
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
   }
   
   header img {
-    max-width: 110px;
-  }
-  header h1 {
-    font-size: 50px;
-    position: static;
-    margin-top: 0;
+    position: relative; /* allows it to stack; it was previously made absolute */
+    max-width: 100px;
+    margin: 0;
+    padding: 0;
   }
 
-  main {
-    margin: 0 20px;
-    font-size: 13px;
-    text-align: center;
+  h1 {
+    font-size: 50px;
+    margin-top: 5px;
   }
-  
-  h2 {
-    font-size: 33px;
-  }
-  
 }
