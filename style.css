@@ -104,7 +104,7 @@ footer {
 }
 
 /* RESPONSIVE DESIGN */
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   header { /* makes the header image and h1 stack */
     display: flex;
     flex-direction: column;
@@ -127,4 +127,7 @@ footer {
     font-size: 50px;
     margin-top: 5px;
   }
+
+  h2 {
+    color: purple;
 }
