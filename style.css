@@ -1,5 +1,8 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Merriweather:wght@400;700&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Lora', serif; /* Classical feel with modern look for body text */
     background-color: #1c1c1c; /* Soft black */
     color: #d3d3d3; /* Ghostly gray for body text */
     margin: 0;
@@ -27,6 +30,7 @@ header {
 }
 
 .main-header {
+    font-family: 'Merriweather', serif; /* Classical feel with modern look for headers */
     font-size: 76px;
     text-align: center;
     margin: 20px 0; /* Adjust this value to control the margin */
@@ -34,6 +38,7 @@ header {
 }
 
 .center-header {
+    font-family: 'Merriweather', serif; /* Classical feel with modern look for headers */
     font-size: 53px; /* Smaller than center-header */
     text-align: center;
     margin: 15px 0; /* Adjust this value to control the margin */
@@ -85,19 +90,19 @@ main {
     display: block;
     margin-top: 5px;
     right: 0;
-    background: #8B0000; /* Regal dark red */
+    background: #B22222; /* Slightly lighter red */
     transition: width 0.3s ease;
     -webkit-transition: width 0.3s ease;
 }
 
 .centered-list a:hover {
-    color: #8B0000; /* Slightly red on hover */
+    color: #B22222; /* Slightly red on hover */
 }
 
 .centered-list a:hover::after {
     width: 100%;
     left: 0;
-    background: linear-gradient(90deg, #8B0000, #d3d3d3); /* Gradient on hover */
+    background: linear-gradient(90deg, #B22222, #d3d3d3); /* Gradient on hover */
 }
 
 header a {
@@ -118,18 +123,18 @@ header a::after {
     display: block;
     margin-top: 5px;
     right: 0; /* Start from the right */
-    background: #8B0000; /* Regal dark red */
+    background: #B22222; /* Slightly lighter red */
     transition: width 0.3s ease;
     -webkit-transition: width 0.3s ease;
 }
 
 header a:hover {
-    color: #8B0000; /* Slightly red on hover */
+    color: #B22222; /* Slightly red on hover */
 }
 
 header a:hover::after {
     width: 100%;
     left: 0;
     right: auto;
-    background: linear-gradient(270deg, #8B0000, #d3d3d3); /* Gradient on hover, right to left */
+    background: linear-gradient(270deg, #B22222, #d3d3d3); /* Gradient on hover, right to left */
 }
