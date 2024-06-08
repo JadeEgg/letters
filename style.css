@@ -21,7 +21,7 @@ header {
 .top-left-image {
     position: absolute;
     top: 10px;
-    left: 10px;
+    left: 22px; /* Move image 12 pixels to the right */
     width: 100px;
     height: auto;
 }
@@ -51,11 +51,10 @@ main {
     max-width: 800px;
     width: 100%;
     padding: 20px;
-    background-color: #2e2e2e; /* Slightly lighter black for contrast */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Remove background color */
+    box-shadow: none; /* Remove box-shadow */
     margin: 20px; /* Adjust this value to control the margin */
     text-align: left;
-    border-radius: 8px;
     color: #d3d3d3; /* Ghostly gray for content text */
 }
 
@@ -72,9 +71,10 @@ main {
 
 .centered-list a {
     text-decoration: none;
-    color: #d4af37; /* White gold dark for links */
+    color: #d3d3d3; /* Ghostly gray for links */
     font-size: 24px;
     position: relative;
+    transition: color 0.3s ease;
 }
 
 .centered-list a::after {
@@ -90,10 +90,14 @@ main {
     -webkit-transition: width 0.3s ease;
 }
 
-centered-list a:hover::after {
+.centered-list a:hover {
+    color: #8B0000; /* Slightly red on hover */
+}
+
+.centered-list a:hover::after {
     width: 100%;
     left: 0;
-    background: #8B0000; /* Regal dark red on hover */
+    background: linear-gradient(90deg, #8B0000, #d3d3d3); /* Gradient on hover */
 }
 
 header a {
