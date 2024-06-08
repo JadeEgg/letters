@@ -30,6 +30,12 @@ header {
     text-align: center;
 }
 
+.main-header {
+    font-size: 36px; /* Smaller than center-header */
+    text-align: center;
+    margin-top: 20px;
+}
+
 main {
     width: 100%;
     text-align: center;
