@@ -117,7 +117,7 @@ header a::after {
     height: 2px;
     display: block;
     margin-top: 5px;
-    left: 0;
+    right: 0; /* Start from the right */
     background: #8B0000; /* Regal dark red */
     transition: width 0.3s ease;
     -webkit-transition: width 0.3s ease;
@@ -129,6 +129,7 @@ header a:hover {
 
 header a:hover::after {
     width: 100%;
-    right: 0;
+    left: 0;
+    right: auto;
     background: linear-gradient(270deg, #8B0000, #d3d3d3); /* Gradient on hover, right to left */
 }
