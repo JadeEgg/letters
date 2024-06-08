@@ -25,16 +25,16 @@ header {
     height: auto;
 }
 
-.center-header {
-    font-size: 48px;
+.main-header {
+    font-size: 76px;
     text-align: center;
     margin: 20px 0; /* Adjust this value to control the margin */
 }
 
-.main-header {
-    font-size: 36px; /* Smaller than center-header */
+.center-header {
+    font-size: 53px; /* Smaller than center-header */
     text-align: center;
-    margin: 20px 0; /* Adjust this value to control the margin */
+    margin: 15px 0; /* Adjust this value to control the margin */
 }
 
 main {
