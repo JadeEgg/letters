@@ -23,8 +23,8 @@ header {
 
 .top-left-image {
     position: absolute;
-    top: 10px;
-    left: 22px; /* Move image 12 pixels to the right */
+    top: 17px; /* Move image 17 pixels from the top */
+    left: 17px; /* Move image 17 pixels from the left */
     width: 100px;
     height: auto;
 }
@@ -41,7 +41,7 @@ header {
     font-family: 'Merriweather', serif; /* Classical feel with modern look for headers */
     font-size: 53px; /* Smaller than center-header */
     text-align: center;
-    margin: 15px 0; /* Adjust this value to control the margin */
+    margin: 15px 0 45px 0; /* Adjust this value to add more space below the header */
     color: #d4af37; /* White gold dark */
 }
 
@@ -50,6 +50,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0 20px; /* Add padding for responsiveness */
 }
 
 .content {
@@ -90,19 +91,19 @@ main {
     display: block;
     margin-top: 5px;
     right: 0;
-    background: #B22222; /* Slightly lighter red */
+    background: #CD5C5C; /* Slightly lighter red */
     transition: width 0.3s ease;
     -webkit-transition: width 0.3s ease;
 }
 
 .centered-list a:hover {
-    color: #B22222; /* Slightly red on hover */
+    color: #CD5C5C; /* Slightly red on hover */
 }
 
 .centered-list a:hover::after {
     width: 100%;
     left: 0;
-    background: linear-gradient(90deg, #B22222, #d3d3d3); /* Gradient on hover */
+    background: linear-gradient(90deg, #CD5C5C, #d3d3d3); /* Gradient on hover */
 }
 
 header a {
@@ -123,18 +124,36 @@ header a::after {
     display: block;
     margin-top: 5px;
     right: 0; /* Start from the right */
-    background: #B22222; /* Slightly lighter red */
+    background: #CD5C5C; /* Slightly lighter red */
     transition: width 0.3s ease;
     -webkit-transition: width 0.3s ease;
 }
 
 header a:hover {
-    color: #B22222; /* Slightly red on hover */
+    color: #CD5C5C; /* Slightly red on hover */
 }
 
 header a:hover::after {
     width: 100%;
     left: 0;
     right: auto;
-    background: linear-gradient(270deg, #B22222, #d3d3d3); /* Gradient on hover, right to left */
+    background: linear-gradient(270deg, #CD5C5C, #d3d3d3); /* Gradient on hover, right to left */
+}
+
+@media (max-width: 768px) {
+    .main-header {
+        font-size: 48px;
+    }
+
+    .center-header {
+        font-size: 36px;
+    }
+
+    .centered-list a {
+        font-size: 20px;
+    }
+
+    header a {
+        font-size: 16px;
+    }
 }
