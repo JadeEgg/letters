@@ -104,7 +104,7 @@ centered-list a:hover {
 
 .centered-list a:hover::after {
     width: 100%;
-    left: 0;
+    right: 0;
     background: linear-gradient(90deg, #B22222, #d3d3d3); /* Gradient on hover */
 }
 
