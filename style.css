@@ -1,12 +1,11 @@
 body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
 }
 
 header {
@@ -15,6 +14,7 @@ header {
     justify-content: center;
     align-items: center;
     position: relative;
+    margin-top: 20px; /* Adjust this value to control the top margin */
 }
 
 .top-left-image {
@@ -25,26 +25,40 @@ header {
     height: auto;
 }
 
-.main-header {
-    font-size: 65px;
+.center-header {
+    font-size: 48px;
     text-align: center;
+    margin: 20px 0; /* Adjust this value to control the margin */
 }
 
-.center-header {
-    font-size: 43px; /* Smaller than main-header */
+.main-header {
+    font-size: 36px; /* Smaller than center-header */
     text-align: center;
-    margin-top: 15px;
+    margin: 20px 0; /* Adjust this value to control the margin */
 }
 
 main {
     width: 100%;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px; /* Adjust this value to control the margin */
+    text-align: left;
 }
 
 .centered-list {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    text-align: center;
 }
 
 .centered-list li {
