@@ -98,7 +98,7 @@ main {
     -webkit-transition: width 0.3s ease;
 }
 
-centered-list a:hover {
+.centered-list a:hover {
     color: #B22222; /* Slightly red on hover */
 }
 
@@ -138,7 +138,6 @@ header a:hover {
 header a:hover::after {
     width: 100%;
     right: 0;
-    right: auto;
     background: linear-gradient(270deg, #B22222, #d3d3d3); /* Gradient on hover, right to left */
 }
 
