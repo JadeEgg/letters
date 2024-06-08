@@ -1,6 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #1c1c1c; /* Soft black */
+    color: #d3d3d3; /* Ghostly gray for body text */
     margin: 0;
     padding: 0;
     display: flex;
@@ -29,12 +30,14 @@ header {
     font-size: 76px;
     text-align: center;
     margin: 20px 0; /* Adjust this value to control the margin */
+    color: #d4af37; /* White gold dark */
 }
 
 .center-header {
     font-size: 53px; /* Smaller than center-header */
     text-align: center;
     margin: 15px 0; /* Adjust this value to control the margin */
+    color: #d4af37; /* White gold dark */
 }
 
 main {
@@ -48,10 +51,12 @@ main {
     max-width: 800px;
     width: 100%;
     padding: 20px;
-    background-color: #ffffff;
+    background-color: #2e2e2e; /* Slightly lighter black for contrast */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 20px; /* Adjust this value to control the margin */
     text-align: left;
+    border-radius: 8px;
+    color: #d3d3d3; /* Ghostly gray for content text */
 }
 
 .centered-list {
@@ -67,10 +72,40 @@ main {
 
 .centered-list a {
     text-decoration: none;
-    color: #000;
+    color: #d4af37; /* White gold dark for links */
     font-size: 24px;
+    position: relative;
 }
 
-.centered-list a:hover {
+.centered-list a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #8B0000; /* Regal dark red */
+    transition: width 0.3s ease;
+    -webkit-transition: width 0.3s ease;
+}
+
+centered-list a:hover::after {
+    width: 100%;
+    left: 0;
+    background: #8B0000; /* Regal dark red on hover */
+}
+
+header a {
+    text-decoration: none;
+    color: #d4af37;
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+header a:hover {
     text-decoration: underline;
+    color: #8B0000; /* Regal dark red underline on hover */
 }
