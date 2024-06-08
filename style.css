@@ -1,173 +1,102 @@
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Merriweather:wght@400;700&display=swap');
 
+/* SELECTORS */
+:root {
+  --background: #1c1c1c; /* soft black */
+  --heading: #D4AF37; /* white gold; dark */ 
+  --text: #d3d3d3; /* ghostly gray */
+  --special: #B22222; /* firebrick red */
+}
+
 body {
-    font-family: 'Lora', serif; /* Classical feel with modern look for body text */
-    background-color: #1c1c1c; /* Soft black */
-    color: #d3d3d3; /* Ghostly gray for body text */
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  background-color: var(--background);
+  font-family: 'Lora', serif;
+  font-size: 15px;
+  color: var(--text);
 }
 
 header {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    margin-top: 20px; /* Adjust this value to control the top margin */
+  font-family: 'Merriweather', serif;
+  color: var(--heading);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.top-left-image {
-    position: absolute;
-    top: 17px; /* Move image 17 pixels from the top */
-    left: 17px; /* Move image 17 pixels from the left */
-    width: 100px;
-    height: auto;
+header img {
+  flex-shrink: 0;
+  max-width: 150px;
+  height: auto;
 }
 
-.main-header {
-    font-family: 'Merriweather', serif; /* Classical feel with modern look for headers */
-    font-size: 76px;
-    text-align: center;
-    margin: 22px 0; /* Adjust this value to control the margin */
-    color: #d4af37; /* White gold dark */
-}
-
-.center-header {
-    font-family: 'Merriweather', serif; /* Classical feel with modern look for headers */
-    font-size: 53px; /* Smaller than center-header */
-    text-align: center;
-    margin: 50px 0 55px 0; /* Add more space above the header */
-    color: #d4af37; /* White gold dark */
-    position: relative;
-    top: 40px; /* Move the header 40 pixels further down */
+h1, h6 {
+  font-size: 76px;
+  flex-grow: 1;
+  text-align: center;
 }
 
 main {
-    width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 53px;
+  padding: 0 0 20px 0;
+}
+
+/* ---- remove comment once finalized
+footer {
+  color: var(--background);
+}
+---- */
+
+/* CLASSES */
+.crumb {
+  font-size: 15px;
+}
+
+/* IDS */
+#index-list {
+  font-size: 22px;
+  list-style: none;
+  text-align: center;
+}
+
+#index-list li {
+  margin: 20px 0;
+}
+
+#index-list a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+#index-list a:hover {
+  color: var(--special);
+}
+
+/* OTHER */
+@media (max-width: 550px) {
+  
+  header {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    padding: 0 20px; /* Add padding for responsiveness */
-}
-
-.content {
-    max-width: 800px;
-    width: 100%;
-    padding: 20px;
-    /* Remove background color */
-    box-shadow: none; /* Remove box-shadow */
-    margin: 20px; /* Adjust this value to control the margin */
-    text-align: left;
-    color: #d3d3d3; /* Ghostly gray for content text */
-}
-
-.centered-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
     text-align: center;
-}
-
-.centered-list li {
-    margin: 10px 0;
-}
-
-.centered-list a {
-    text-decoration: none;
-    color: #d3d3d3; /* Ghostly gray for links */
-    font-size: 24px;
-    position: relative;
-    transition: color 0.3s ease;
-}
-
-.centered-list a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    display: block;
-    margin-top: 5px;
-    right: 0;
-    background: #B22222; /* Slightly lighter red */
-    transition: width 0.3s ease;
-    -webkit-transition: width 0.3s ease;
-}
-
-.centered-list a:hover {
-    color: #B22222; /* Slightly red on hover */
-}
-
-.centered-list a:hover::after {
-    width: 100%;
-    left: 0;
-    background: linear-gradient(90deg, #B22222, #d3d3d3); /* Gradient on hover */
-}
-
-header a {
-    text-decoration: none;
-    color: #d4af37;
-    font-size: 20px;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    transition: color 0.3s ease;
-}
-
-header a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    display: block;
-    margin-top: 5px;
-    right: 0; /* Start from the right */
-    background: #B22222; /* Slightly lighter red */
-    transition: width 0.3s ease;
-    -webkit-transition: width 0.3s ease;
-}
-
-header a:hover {
-    color: #B22222; /* Slightly red on hover */
-}
-
-header a:hover::after {
-    width: 100%;
-    right: 0;
-    background: linear-gradient(270deg, #B22222, #d3d3d3); /* Gradient on hover, right to left */
-}
-
-@media (max-width: 768px) {
-    .main-header {
-        font-size: 48px;
-    }
-
-    .center-header {
-        font-size: 36px;
-    }
-
-    .centered-list a {
-        font-size: 20px;
-    }
-
-    header a {
-        font-size: 16px;
-    }
-}
-
-/* Specific styling for hyperlink in another page to match headers */
-.external-header-link {
-    font-family: 'Merriweather', serif; /* Use the same font as headers */
-    font-size: 20px; /* Adjust the font size as needed */
-    text-decoration: none;
-    color: #d4af37; /* White gold dark */
-    transition: color 0.3s ease;
-}
-
-.external-header-link:hover {
-    color: #B22222; /* Slightly red on hover */
+  }
+  
+  header img {
+    max-width: 105px;
+  }
+  header h1 {
+    font-size: 40px;
+  }
+  
+  h2 {
+    font-size: 33px;
+  }
+  
 }
