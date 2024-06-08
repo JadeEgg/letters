@@ -43,7 +43,9 @@ main {
 }
 
 h2 {
+  color: var(--heading);
   font-size: 53px;
+  text-align: center;
   padding: 0 0 20px 0;
 }
 
@@ -56,6 +58,15 @@ footer {
 /* CLASSES */
 .crumb {
   font-size: 15px;
+}
+
+.crumb a {
+  text-decoration: none;
+  color: var(--heading);
+}
+
+.crumb a:hover {
+  color: var(--special);
 }
 
 /* IDS */
