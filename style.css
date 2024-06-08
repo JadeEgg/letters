@@ -25,15 +25,15 @@ header {
     height: auto;
 }
 
-.center-header {
-    font-size: 48px;
+.main-header {
+    font-size: 65px;
     text-align: center;
 }
 
-.main-header {
-    font-size: 36px; /* Smaller than center-header */
+.center-header {
+    font-size: 43px; /* Smaller than main-header */
     text-align: center;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 main {
