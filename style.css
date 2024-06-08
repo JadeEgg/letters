@@ -55,6 +55,11 @@ p {
   line-height: 1.5;
 }
 
+p a {
+  text-decoration: none;
+  color: purple; /*really nice pop: deep, cosmic, regal */
+}
+
 footer {
   color: var(--background);
   text-align: right;
