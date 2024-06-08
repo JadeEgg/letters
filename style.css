@@ -47,11 +47,11 @@ h2 {
   padding: 0 0 20px 0;
 }
 
-/* ---- remove comment once finalized
 footer {
   color: var(--background);
+  text-align: right;
+  margin: 40px 20px 10px 0;
 }
----- */
 
 /* CLASSES */
 .crumb {
