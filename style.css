@@ -41,8 +41,10 @@ header {
     font-family: 'Merriweather', serif; /* Classical feel with modern look for headers */
     font-size: 53px; /* Smaller than center-header */
     text-align: center;
-    margin: 15px 0 45px 0; /* Adjust this value to add more space below the header */
+    margin: 60px 0 45px 0; /* Add more space above the header */
     color: #d4af37; /* White gold dark */
+    position: relative;
+    top: 40px; /* Move the header 40 pixels further down */
 }
 
 main {
