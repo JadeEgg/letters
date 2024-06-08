@@ -75,11 +75,11 @@ footer {
 
 .crumb a {
   text-decoration: none;
-  color: var(--heading);
+  color: purple;
 }
 
 .crumb a:hover {
-  color: var(--special);
+  color: var(--heading);
 }
 
 .highlight {
