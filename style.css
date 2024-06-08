@@ -75,6 +75,7 @@ footer {
 
 /* IDS */
 #index-list { /* turns the body of index.html into a stacking list */
+  font-size: 22px;
   display: flex;
   flex-direction: column;
   text-align: center;
