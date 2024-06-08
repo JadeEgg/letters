@@ -6,7 +6,8 @@
   --background: #1c1c1c; /* soft black */
   --heading: #D4AF37; /* white gold; dark */
   --text: #d3d3d3; /* ghostly gray */
-  --special: #B22222; /* firebrick red */
+  /* --special: #B22222; firebrick red */
+  --special: purple; /*really nice pop: deep, cosmic, regal - HEX #910080  */
 }
 
 /* SELECTORS */
@@ -56,8 +57,7 @@ p {
 }
 
 p a {
-  text-decoration: none;
-  color: purple; /*really nice pop: deep, cosmic, regal */
+  color: var(--text);
 }
 
 footer {
@@ -75,7 +75,7 @@ footer {
 
 .crumb a {
   text-decoration: none;
-  color: purple;
+  color: var(--special);
 }
 
 .crumb a:hover {
