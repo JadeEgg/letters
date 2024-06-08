@@ -93,19 +93,19 @@ main {
     display: block;
     margin-top: 5px;
     right: 0;
-    background: #A52A2A; /* Slightly lighter red */
+    background: #B22222; /* Slightly lighter red */
     transition: width 0.3s ease;
     -webkit-transition: width 0.3s ease;
 }
 
-.centered-list a:hover {
-    color: #A52A2A; /* Slightly red on hover */
+centered-list a:hover {
+    color: #B22222; /* Slightly red on hover */
 }
 
 .centered-list a:hover::after {
     width: 100%;
     left: 0;
-    background: linear-gradient(90deg, #A52A2A, #d3d3d3); /* Gradient on hover */
+    background: linear-gradient(90deg, #B22222, #d3d3d3); /* Gradient on hover */
 }
 
 header a {
@@ -126,20 +126,20 @@ header a::after {
     display: block;
     margin-top: 5px;
     right: 0; /* Start from the right */
-    background: #A52A2A; /* Slightly lighter red */
+    background: #B22222; /* Slightly lighter red */
     transition: width 0.3s ease;
     -webkit-transition: width 0.3s ease;
 }
 
 header a:hover {
-    color: #A52A2A; /* Slightly red on hover */
+    color: #B22222; /* Slightly red on hover */
 }
 
 header a:hover::after {
     width: 100%;
     left: 0;
     right: auto;
-    background: linear-gradient(270deg, #A52A2A, #d3d3d3); /* Gradient on hover, right to left */
+    background: linear-gradient(270deg, #B22222, #d3d3d3); /* Gradient on hover, right to left */
 }
 
 @media (max-width: 768px) {
@@ -158,4 +158,17 @@ header a:hover::after {
     header a {
         font-size: 16px;
     }
+}
+
+/* Specific styling for hyperlink in another page to match headers */
+.external-header-link {
+    font-family: 'Merriweather', serif; /* Use the same font as headers */
+    font-size: 20px; /* Adjust the font size as needed */
+    text-decoration: none;
+    color: #d4af37; /* White gold dark */
+    transition: color 0.3s ease;
+}
+
+.external-header-link:hover {
+    color: #B22222; /* Slightly red on hover */
 }
