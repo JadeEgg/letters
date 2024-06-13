@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Colosseum</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="crumb"><a href="/">Letters..</a></header>
+<main>
+<h2>The Colosseum</h2>
+<p>Life is good, Roman,
+<br>but prepare for War.
+<br>There is no rush;
+<br>take back the reins.
+<br>I will do my best
+<br>to constantly do
+<br>what I ought to do.</p>
+</main>
+</body>
+<footer><p>01.24</p></footer>
+</html>
